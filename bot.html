@@ -16,13 +16,31 @@
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .img_container{
+        .img_container {
             height: 800px;
             width: 100%;
-            background: white; 
+            background: black;
+            
             /* going to add img as background */
+            background-image: url('data/img/hero-image1.jpeg');
+            /* background-color: rgba(255, 255, 255, 0.8); */
+            color: white;
             background-size: cover;
             background-position: center;
+            display: grid;
+            grid-gap: 1rem;
+            /* grid-template-columns: repeat(2, 1fr); */
+            grid-template-columns: 2fr 1fr;
+            /* margin-bottom: 20px; */
+        }
+
+        /* .img_box {
+            width: 48%;
+            height: auto;
+        } */
+        .img_box img {
+            max-width: 100%;
+            height: 800px;
         }
     </style>
 </head>
@@ -81,10 +99,23 @@
             </div>
         </div>
     </nav>
+    <!-- hero section  -->
     <section class="img_container">
-        <!-- <div class="img_box">
-            <img src="data\img\card-placeholder-1.png" alt="" height="80vh">
-        </div> -->
+        <div id="imgBox-1" class="img_box">
+            <p class="title-font capitalize md:uppercase text-9xl pt-8 p-8 font-semibold text-white-900">
+                Talk to
+            </p>
+            <p class="title-font capitalize md:uppercase text-9xl p-8 font-semibold text-white-900">
+                our bot
+            </p>
+            <p class="title-font capitalize md:uppercase text-4xl p-8 font-light text-white-900 ">
+                Click on the chat icon
+            </p>
+                <!-- <img src="data\img\card-placeholder-1.png" alt="" height="80vh"> -->
+        </div>
+        <div id="imgBox-2" class="img_box">
+
+        </div>
     </section>
     <!-- chatbot section  -->
     <section class="chatbot_section">
