@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>CHAT BOT</title>
+        <style>
+            body{
+                color: #2563eb;
+            }
+        </style>
+    </head>
+    <body>
+        <!--=============== NAV ===============-->
+        <nav class="nav" id="nav">
+            <div class="nav__menu container" id="nav-menu">
+                <div class="nav__shape"></div>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+                
+                <div class="nav__data">
+                    <div class="nav__mask">
+                        <!-- Change your profile picture -->
+                        <img src="assets/img/law.png" alt="" class="nav__img">
+                    </div>
+
+                    <span class="nav__greeting">This is KYR</span>
+                    <h1 class="nav__name">KYR <br>know your right</h1>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home' ></i>
+                             Home 
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                             About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <!-- <i class='bx bx-briefcase-alt-2'></i> -->
+                            <i class='bx bx-user'></i>
+                             Blog
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <!-- <i class='bx bx-bookmark'></i> -->
+                            <i class='bx bx-user'></i>
+                             Chat Bot
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-detail'></i>
+                             Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--=============== MAIN ===============-->
+        <main class="main" id="main">
+            <!--=============== HEADER ===============-->
+            <header class="header" id="header">
+                <nav class="header__nav container">
+                    <a href="#" class="header__logo">
+                        KYR
+                    </a>
+    
+                    <!-- Toggle button -->
+                    <div class="header__toggle" id="header-toggle">
+                        <i class='bx bx-grid-alt'></i>
+                    </div>
+                </nav>
+            </header>
+
+
+            <!-- When inserting your content into sections, remove the section__height class -->
+            <!--=============== HOME ===============-->
+            <section class="section section__height container" id="chatbot">
+                <h1>CHAT BOT</h1>
+                <!-- CHAT BOT -->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script>
+      window.botpressWebChat.init({
+          "composerPlaceholder": "Chat with HERE I AM",
+          
+          "botId": "9166b426-c76c-4392-81ce-97bb7962547b",
+          "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+          "messagingUrl": "https://messaging.botpress.cloud",
+          "clientId": "9166b426-c76c-4392-81ce-97bb7962547b",
+          "webhookId": "b2bfc3ba-6cbd-4e76-9329-6fc480ac9d92",
+          "lazySocket": true,
+          "themeName": "prism",
+          "botName": "HERE I AM",
+          "stylesheet": "https://webchat-styler-css.botpress.app/prod/ecfa65e9-eef9-4eb5-bfac-8565039aef52/v1918/style.css",
+          "frontendVersion": "v1",
+          "enableConversationDeletion": true,
+
+          "theme": "prism",
+          "themeColor": "#2563eb"
+      });
+    </script>
+                
+            </section>
+        </main>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
