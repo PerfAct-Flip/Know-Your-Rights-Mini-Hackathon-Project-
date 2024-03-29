@@ -1,0 +1,91 @@
+UNIVERSAL
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/* INTRO SECTION  */
+
+.Intro-section{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns:repeat(2, 1fr);
+    /* margin-top: 20px; */
+    background-image: url('/data/img/hero-section-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+    color: white;
+
+    /* background-color: blueviolet; */
+    /* border-bottom: 1px solid black; */
+    
+}
+.intro-box{
+    padding:4% 10%;
+}
+
+.Intro-section h1 {
+    font-size: 6rem;
+}
+
+.intro-box span{
+    font-size: 1.3em;
+    display: block;
+    /* margin-bottom: 0; */
+}
+.intro-box span, .intro-box p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.intro-box button{
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: white;
+    background-color: black;
+
+}
+
+/* BLOG section */
+.Blog-section {
+    /* background-image: url('/data/svg/layered-waves-haikei.svg');
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+.Blog-section h1 {
+    font-size: 5rem;
+    margin:0;
+    
+}
+
+.blog-box{
+    display: flex;
+    margin-top: 20px;
+    margin: 0px 20px;
+    width: 100%;
+    justify-content: center;
+}
+.blog{
+    background-color: #9AD3CC;
+     /* border: 2px solid black; */
+     height: 500px;
+     width: 400px;
+     margin:20px;
+     padding: 20px;
+     border-radius: 15px;
+     /* display: grid; */
+}
